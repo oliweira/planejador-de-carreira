@@ -1,110 +1,138 @@
-<!--START_SECTION:header-->
-<div align="center">
-  <p align="center">
-    <img 
-      alt="DIO Education" 
-      src="https://raw.githubusercontent.com/digitalinnovationone/template-github-trilha/main/.github/assets/logo.webp" 
-      width="100px" 
-    />
-    <h1>Título do Curso ou Projeto</h1>
-  </p>
-</div>
-<!--END_SECTION:header-->
+# 🎯 Orientador de Carreira em Tecnologia (Career Interview Agent)
 
-<p align="center">
-  <img src="https://img.shields.io/static/v1?label=DIO&message=Education&color=E94D5F&labelColor=202024" alt="DIO Project" />
-  <a href="NIVEL"><img  src="https://img.shields.io/static/v1?label=Nivel&message=Basico&color=E94D5F&labelColor=202024" alt="Nivel"></a>
+Este projeto apresenta um **prompt estruturado** que simula um **entrevistador profissional especializado em carreiras em tecnologia**.  
+O objetivo é **entender o perfil do usuário**, sugerir **carreiras alinhadas** e **transferir o contexto para um segundo agente**, responsável pelo plano de estudos.
 
-</p>
+---
 
-<!--  -->
-<table align="center">
-<thead>
-  <tr>
-    <td>
-        <p align="center">Expert</p>
-        <a href="https://github.com/felipeAguiarCode">
-        <img src="https://avatars0.githubusercontent.com/u/37452836?v=3&s=115" alt="@felipeAguiarCode"><br>
-      </a>
-    </td>
-    <td colspan="3">
-    <p>🎉 10y+ em sistemas comerciais com .NET C# e NODE.JS.
-      <br/>
-     🌟 Desenvolvedor fullstack - Coordenador de educação na DIO
-      <br/>
-    👨‍💻 Foco em front-ends SPA com React, Angular e Vue.js
-    </p>
-      <a 
-      href="https://www.linkedin.com/in/felipe-me/" 
-      align="center">
-           <img 
-            align="center" 
-            alt="Material de Apoio" 
-            src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
-            >
-        </a>
-        <a href="https://www.instagram.com/felipeaguiar.exe/" target="_blank">
-            <img 
-              align="center" 
-              alt="Instagram" 
-              src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"
-            >
-        </a>
-    </td>
-  </tr>
-</thead>
-</table>
-<!--  -->
+## 🧠 Visão Geral
 
-<br/>
-<br/>
+O agente conduz uma **entrevista guiada com 7 perguntas**, analisando fatores como:
 
-## 💻 Sobre o Projeto
+- Interesses e motivações pessoais
+- Experiência prévia (tech ou não-tech)
+- Disponibilidade de estudo semanal
+- Preferências de trabalho (pessoas, dados ou código)
+- Objetivo profissional (primeiro emprego, transição ou crescimento)
+- Interesses técnicos específicos
 
-Vamos construir uma página spa, responsiva, para usar em diversos tipos de micro, pequena e média empresas. Contém as seguintes seções: Header, Navigation, Home, Sobre, Serviços, Depoimentos, Contato e Footer que faz xxx e yyy
+Ao final da entrevista, o agente:
+- Analisa o perfil com base em critérios internos
+- **Sugere 3 carreiras em tecnologia**, ranqueadas
+- Explica vantagens, desafios e contexto de mercado
+- Solicita ao usuário que escolha uma carreira
+- Realiza o **handoff para um segundo agente especializado**
 
-## 📚 Pré-requisitos de Habilidades e Níveis de Conhecimento
+---
 
-Antes de ingressar neste conteúdo, é necessário possuir conhecimento prévio nas seguintes áreas:
+## 🧩 Estrutura do Prompt
 
-- [habilidades ou conhecimentos prévios necessários] | [Básico, Intermediário, Avançado ou Especialista]
+O fluxo completo é dividido em **3 fases principais**:
 
-- _Exemplo_:
+---
 
-  - Java | Básico
-  - Gerenciamento de pacotes | Básico
-  -
+## 📝 FASE 1 — Entrevista Estruturada
 
-- [Outros pré-requisitos, se aplicável]
+- Total de **7 perguntas**
+- **Apenas 1 pergunta por vez**
+- O agente só avança após receber a resposta do usuário
 
-- _Exemplo_:
-  - Lógica de programação
-  - Javascript
+### Perguntas abordam:
+1. O que mais atrai a pessoa em tecnologia  
+2. Experiência prévia na área  
+3. Horas disponíveis para estudo  
+4. Preferência de trabalho (pessoas, dados ou código)  
+5. Objetivo profissional  
+6. Interesses técnicos específicos  
+7. Experiências anteriores que possam ser aproveitadas  
 
-## 🛠️ Habilidades e Sub-habilidades que vamos aprender neste conteúdo
+✅ Após a 7ª resposta, o agente **interrompe totalmente as perguntas**.
 
-- [Lista das habilidades principais a serem desenvolvidas]
+---
 
-  - [Subhabilidades relacionadas, se aplicável]
+## 📊 FASE 2 — Análise e Sugestão de Carreiras
 
-- _Exemplo_:
-  - Java
-    - Api Rest
+O agente realiza uma análise interna (não exibida ao usuário), utilizando uma **matriz de decisão** com os seguintes critérios:
 
-## 🎯 Objetivos e Resultados Esperados
+- Afinidade com interesses
+- Demanda de mercado
+- Tempo médio até nível júnior
+- Aproveitamento de experiência prévia
 
-Após a conclusão do curso/projeto, os estudantes estarão aptos a:
+Cada carreira recebe uma pontuação de **0 a 20 pontos**.
 
-- [Descrição do que os estudantes serão capazes de fazer]
-- [Projetos ou soluções que os estudantes estarão aptos a construir]
+---
 
-<!--START_SECTION:footer-->
+## 🏆 Resultado Apresentado ao Usuário
 
-<br />
-<br />
+O agente exibe:
 
-<p align="center">
-  <a href="https://www.dio.me/" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/digitalinnovationone/template-github-trilha/main/.github/assets/footer.png" alt="banner"/>
-  </a>
-</p>
+- 🥇 **1ª carreira recomendada**
+- 🥈 **2ª carreira recomendada**
+- 🥉 **3ª carreira recomendada**
+
+Cada carreira inclui:
+
+- Motivos pelos quais combina com o perfil
+- Vantagens e desafios
+- Comentários gerais sobre o mercado  
+  > ⚠️ Sempre mencionado que mercado varia por região e experiência
+
+Ao final:
+
+> **“Qual dessas carreiras te chamou mais atenção?”**
+
+---
+
+## 🔄 FASE 3 — Handoff para o Agent 2
+
+Após o usuário escolher uma carreira, o agente:
+
+- Confirma a escolha
+- Transfere o contexto completo para um **segundo agente**
+- O Agent 2 é responsável por criar o **plano de estudos personalizado**
+
+### Dados enviados para o Agent 2:
+- Carreira escolhida
+- Horas disponíveis por semana
+- Nível de experiência
+- Objetivo profissional
+- Preferência (pessoas, dados ou código)
+- Interesses técnicos mencionados
+
+---
+
+## ⚙️ Regras Críticas do Prompt
+
+- ❗ Apenas **1 pergunta por vez**
+- ❗ Nunca ultrapassar 7 perguntas
+- ❗ Nunca gerar plano de estudos
+- ❗ Nunca citar salários específicos
+- ❗ Após a entrevista, focar apenas na análise e sugestão
+- ❗ Transferir corretamente para o Agent 2 após a escolha
+
+---
+
+## 🚀 Objetivo do Projeto
+
+Este prompt foi criado para:
+
+- Ajudar iniciantes ou profissionais em transição
+- Criar clareza sobre caminhos possíveis em tecnologia
+- Simular um **processo real de orientação de carreira**
+- Integrar múltiplos agentes de forma organizada
+
+Ideal para:
+- Projetos com **IA conversacional**
+- **Agentes especializados**
+- Experimentos com **LLMs, prompts e handoffs**
+
+---
+
+## ✅ Status
+
+✔ Prompt completo  
+✔ Estrutura validada  
+✔ Pronto para uso e expansão  
+
+Sinta-se livre para adaptar, traduzir ou integrar em sistemas maiores.

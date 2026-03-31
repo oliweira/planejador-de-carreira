@@ -135,4 +135,126 @@ Ideal para:
 ✔ Estrutura validada  
 ✔ Pronto para uso e expansão  
 
-Sinta-se livre para adaptar, traduzir ou integrar em sistemas maiores.
+
+# 🧭 Career Interview Agent – Exemplo de Funcionamento
+
+Abaixo está um **exemplo real de como o prompt funciona na prática**, mostrando o fluxo completo da conversa.
+
+---
+
+## 💬 Exemplo de Conversa (Fluxo Real do Prompt)
+
+### 🎬 Início da Entrevista
+
+**Agent:**
+> Olá! 👋  
+> Sou seu entrevistador de carreira em tecnologia. Vou fazer 7 perguntas rápidas para entender seu perfil e depois vou sugerir as melhores carreiras para você.  
+>  
+> Para começar: o que mais te atrai em tecnologia — resolver problemas, criar produtos ou entender sistemas?
+
+---
+
+### 📝 Fase 1 — Perguntas (1 por vez)
+
+**Usuário:**
+> Resolver problemas.
+
+**Agent (Pergunta 2):**
+> Legal! E você já tem experiência na área de tecnologia ou está começando do zero?
+
+**Usuário:**
+> Tenho alguma experiência.
+
+**Agent (Pergunta 3):**
+> Entendi! Quantas horas por semana você consegue dedicar aos estudos?
+
+**Usuário:**
+> Menos de 10 horas.
+
+**Agent (Pergunta 4):**
+> Perfeito! No seu dia a dia, você prefere lidar mais com pessoas, dados ou código?
+
+**Usuário:**
+> Dados.
+
+**Agent (Pergunta 5):**
+> Ótimo! Qual é seu objetivo principal: conseguir o primeiro emprego, fazer transição de carreira ou crescer na função atual?
+
+**Usuário:**
+> Crescer na função atual.
+
+**Agent (Pergunta 6):**
+> Show! Quais assuntos ou tecnologias mais despertam seu interesse?
+
+**Usuário:**
+> Área de dados.
+
+**Agent (Pergunta 7):**
+> Última pergunta: você tem alguma experiência prévia que gostaria de aproveitar nessa nova jornada?
+
+**Usuário:**
+> Quero usar minha formação anterior.
+
+---
+
+### 📊 Fase 2 — Análise e Sugestão de Carreiras
+
+**Agent:**
+> Perfeito! Tenho tudo que preciso. Deixa eu analisar o melhor caminho para você...
+
+Em seguida, o agente apresenta **3 carreiras ranqueadas**, com explicações claras, vantagens, desafios e contexto de mercado.
+
+---
+
+### 🏆 Exemplo de Resultado
+
+🥇 **Analista de Dados**  
+🥈 **Analista de BI**  
+🥉 **Analytics Engineer**
+
+Ao final:
+
+**Agent:**
+> Qual dessas carreiras te chamou mais atenção?
+
+---
+
+### ✅ Escolha do Usuário
+
+**Usuário:**
+> Quero seguir como Analista de Dados.
+
+---
+
+### 🔄 Fase 3 — Handoff para o Agent 2
+
+**Agent:**
+> Excelente escolha! 🎯  
+> Vou te passar agora para meu colega especialista em Analista de Dados.  
+> Ele vai montar todo o plano de estudos personalizado para você!
+
+O handoff inclui:
+- Carreira escolhida
+- Tempo disponível por semana
+- Nível de experiência
+- Objetivo profissional
+- Preferências e interesses
+- Experiência prévia a ser aproveitada
+
+---
+
+## 🧠 O que esse Prompt Demonstra
+
+- Entrevista estruturada e controlada
+- Apenas **1 pergunta por vez**
+- Clareza na tomada de decisão
+- Experiência fluida para o usuário
+- Integração entre múltiplos agentes
+- Separação clara entre **diagnóstico** e **planejamento**
+
+---
+
+## 🎯 Próximo Passo no Fluxo
+
+A partir desse ponto, o **Agent 2 assume a conversa** e inicia o plano de estudos personalizado, baseado integralmente nas informações coletadas pelo primeiro agente.
+``
